@@ -13,7 +13,7 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/auth'>Login</Link>
+            <Link href='/api/auth'>Login</Link>
           </li>
           <li>
             <Link href='/profile'>Profile</Link>
