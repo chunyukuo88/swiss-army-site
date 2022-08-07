@@ -1,7 +1,7 @@
 import { connectToDatabase } from '../../../lib/db';
 import { emailIsInvalid, hashPassword, passwordIsInvalid } from '../../../lib/auth';
 
-export default async function handler(req, res) {
+export default async function signupHandler(req, res) {
   if (req.method !== 'POST') return;
   if (inputsAreInvalid(req)) return postError(res, messages.ERROR_INVALID_INPUT);
   const client = await connectToDatabase();
